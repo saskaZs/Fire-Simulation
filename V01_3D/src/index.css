@@ -1,0 +1,73 @@
+/* Global reset for fullscreen experience */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* The main app container, acts as the positioning context */
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* The R3F canvas container, positioned to fill the screen */
+.app > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* The canvas element itself */
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+/* The controls container, overlayed on top */
+.controls {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  
+  /* Styling for the floating panel */
+  background: rgba(10, 10, 15, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  
+  /* Give it a proper width */
+  width: 500px;
+  max-width: 90vw;
+  justify-content: center;
+}
+
+.controls label {
+  white-space: nowrap; /* Prevent text wrapping */
+  font-weight: 500;
+}
+
+input[type="range"] {
+  /* Make the slider fill the available space */
+  width: 100%;
+  flex-grow: 1;
+}
