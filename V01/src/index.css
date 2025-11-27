@@ -1,0 +1,32 @@
+/* Minimal page scaffolding – no UI libs needed */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.app {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+canvas {
+  display: block;
+  background: #000;
+  border: 1px solid #333;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+input[type="range"] {
+  width: 320px;
+}
