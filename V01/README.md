@@ -4,6 +4,8 @@ A realistic, interactive 2D fire simulation built with React and native HTML Can
 
 The fire's "energy" is adjustable via a slider, influencing spawn rates, velocity, spread, and lifetime to create a natural, flickering flame—from dim embers to a roaring blaze.
 
+https://github.com/user-attachments/assets/53598176-9251-47c8-ab15-41430436559a
+
 ---
 
 ## 🚀 Features
