@@ -4,6 +4,8 @@ A realistic, interactive 3D fire simulation built with React Three Fiber (R3F). 
 
 The fire's "energy" is adjustable via a slider, affecting spawn rates, velocity, spread, and lifetime for a natural, flickering flame—from a low ember to a roaring blaze.
 
+https://github.com/user-attachments/assets/fe01f987-5a60-464d-8293-f479eb318926
+
 ---
 
 ## 🚀 Features
